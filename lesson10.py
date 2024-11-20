@@ -57,3 +57,5 @@ cal_area_triangle(20, 30)
 triangles = [[5, 6], [4, 5], [4, 8], [10, 20], [12, 15]]
 for t in triangles:
     cal_area_triangle(t[0], t[1])
+#Function: A function is an independent block of code that performs a specific task and can be called by its name. It is not tied to any object or class and can be defined at the module level (outside of any class).
+#Method: A method is a function that is associated with an object and is defined within a class. Methods can operate on the data contained within the class (i.e., they can access and modify the object's attributes).
