@@ -1,14 +1,19 @@
 # inheritance
 #error handling
 #dates
+from datetime import datetime, date
+
+
 class Employee:
     def __init__(self,name,id_number,dob,gender):
         self.name=name
         self.id_number=id_number
         self.dob=dob
         self.gender=gender
+        date_of_birth=datetime.strptime(dob,'%Y-%m-%d')
+        self.age= date.today().year -date_of_birth.year
     def print_details(self):
-        print(f'name:{self.name}\nID: {self.id_number}\nDOB: {self.dob}\nGender:{self.gender}')
+        print(f'name:{self.name}\nID: {self.id_number}\nDOB: {self.dob}\nGender:{self.gender}\nAge:{self.age}')
 #the  child class that is  inheritance
 #\nID.....is used to when you want to print each value in its line
 class PermanentEmployee(Employee):
